@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "127.0.0.1",
@@ -20,9 +20,9 @@ class TestIp4(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.ipv4_address(v))
+            self.assertTrue(checkifvalid.ipv4_address(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.ipv4_address(b))
+            self.assertFalse(checkifvalid.ipv4_address(b))

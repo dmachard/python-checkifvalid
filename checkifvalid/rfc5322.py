@@ -1,5 +1,5 @@
 
-from isvalid import rfc5234
+from checkifvalid import rfc5234
 
 # Internet Message Format rfc5322
 

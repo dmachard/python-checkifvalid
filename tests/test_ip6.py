@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "::",
@@ -20,9 +20,9 @@ class TestIp6(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.ipv6_address(v))
+            self.assertTrue(checkifvalid.ipv6_address(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.ipv6_address(b))
+            self.assertFalse(checkifvalid.ipv6_address(b))

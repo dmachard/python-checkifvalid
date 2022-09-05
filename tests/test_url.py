@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "https://john.doe@www.example.com:123/forum/questions/?tag=networking&der=newest#top",
@@ -25,11 +25,11 @@ class TestUrl(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.url(v))
+            self.assertTrue(checkifvalid.url(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.url(b))
+            self.assertFalse(checkifvalid.url(b))
 
 

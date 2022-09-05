@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "FF:FF:FF:FF:FF:FF",
@@ -15,9 +15,9 @@ class TestMacAddr(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.mac_address(v))
+            self.assertTrue(checkifvalid.mac_address(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.mac_address(b))
+            self.assertFalse(checkifvalid.mac_address(b))

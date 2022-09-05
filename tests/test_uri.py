@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "sip:support@john.doe",
@@ -22,11 +22,11 @@ class TestUri(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.uri(v))
+            self.assertTrue(checkifvalid.uri(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.uri(b))
+            self.assertFalse(checkifvalid.uri(b))
 
 

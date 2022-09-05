@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "ip6-localnet",
@@ -16,9 +16,9 @@ class TestEmail(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.hostname(v))
+            self.assertTrue(checkifvalid.hostname(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.hostname(b))
+            self.assertFalse(checkifvalid.hostname(b))

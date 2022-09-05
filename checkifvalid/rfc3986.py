@@ -1,5 +1,5 @@
-from isvalid import rfc5234
-from isvalid import rfc5954
+from checkifvalid import rfc5234
+from checkifvalid import rfc5954
 
 # Appendix A. Collected ABNF for URI
 PCT_ENCODED = r'(?:' + r"\%" + rfc5234.HEXDIG + rfc5234.HEXDIG + r')'

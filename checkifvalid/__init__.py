@@ -1,7 +1,7 @@
-from isvalid import rfc5954
-from isvalid import rfc5322
-from isvalid import rfc3986
-from isvalid import rfc1738
+from checkifvalid import rfc5954
+from checkifvalid import rfc5322
+from checkifvalid import rfc3986
+from checkifvalid import rfc1738
 
 import re
 

@@ -1,5 +1,5 @@
 import unittest
-import isvalid
+import checkifvalid
 
 valid_text = [
     "john.doe@example.com",
@@ -22,9 +22,9 @@ class TestEmail(unittest.TestCase):
     def test_valid(self):
         """checking valid syntax"""
         for v in valid_text:
-            self.assertTrue(isvalid.email(v))
+            self.assertTrue(checkifvalid.email(v))
             
     def test_invalid(self):
         """checking invalid syntax"""
         for b in invalid_text:
-            self.assertFalse(isvalid.email(b))
+            self.assertFalse(checkifvalid.email(b))

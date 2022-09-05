@@ -1,5 +1,5 @@
 
-from isvalid import rfc5234
+from checkifvalid import rfc5234
 
 # rfc5954 Essential Correction for IPv6 ABNF and URI Comparison in RFC 3261
 # 4.1. Resolution for Extra Colon in IPv4-Mapped IPv6 Address

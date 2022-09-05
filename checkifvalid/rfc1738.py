@@ -1,5 +1,5 @@
-from isvalid import rfc5234
-from isvalid import rfc5954
+from checkifvalid import rfc5234
+from checkifvalid import rfc5954
 
 # rfc1738
 # ; Miscellaneous definitions
